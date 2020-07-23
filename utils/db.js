@@ -8,7 +8,7 @@ const addUser = (username) => {
 module.exports.addUser = addUser;
 
 module.exports.findUser = (username) => {
-    return store.users.filter(user => user === username);
+    return store.users.filter(user => user.toLowerCase() === username.toLowerCase());
 }
 
 module.exports.getUsers = () => {
@@ -32,7 +32,7 @@ module.exports.getPosts = (username) => {
         return store.posts;
     }
 
-    return store.posts.filter(post => post.username === username);
+    return store.posts.filter(post => post.username.toLowerCase() === username.toLowerCase());
 }
 
 module.exports.addFollow = (follower, followee) => {
@@ -49,5 +49,5 @@ module.exports.getFollows = (username) => {
         return store.follows;
     }
 
-    return store.follows.filter(follow => follow.follower === username);
+    return store.follows.filter(follow => follow.follower.toLowerCase() === username.toLowerCase());
 }

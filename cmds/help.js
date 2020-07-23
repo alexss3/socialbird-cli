@@ -13,5 +13,7 @@ module.exports = () => {
     Following: <username> follows <username>
 
     Wall: <username> wall
+
+    *Note - usernames are NOT case sensitive, i.e. User == uSeR
     `;
 };
