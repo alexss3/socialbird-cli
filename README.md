@@ -32,12 +32,12 @@ The full list of commands is as follows:
 
 * Exit: exit
 
-* Posting: <username> -> text
+* Posting: \<username\> -> text
 
-* Reading: <username>
+* Reading: \<username\>
 
-* Following: <username> follows <username>
+* Following: \<username\> follows \<username\>
 
-* Wall: <username> wall
+* Wall: \<username\> wall
 
 Do note that usernames are not case sensitive. For example, _Bob_ would be the same as _bOb_.
