@@ -21,7 +21,7 @@ module.exports.addPost = function (username, message) {
         date: Date.now()
     };
 
-    this.addUser(username);
+    addUser(username);
     store.posts.push(post);
     return store.posts[store.posts.length-1];
 }
