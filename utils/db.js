@@ -1,10 +1,11 @@
 const store = require('../data/store');
 
-
-module.exports.addUser = (username) => {
+const addUser = (username) => {
     if (store.users.find(u => username.trim() === u) !== undefined) return;
     store.users.push(username.trim());
 }
+
+module.exports.addUser = addUser;
 
 module.exports.findUser = (username) => {
     return store.users.filter(user => user === username);
