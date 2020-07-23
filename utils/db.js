@@ -15,7 +15,7 @@ module.exports.getUsers = () => {
     return store.users;
 }
 
-module.exports.addPost = function (username, message) {
+module.exports.addPost = (username, message) => {
     const post = {
         username,
         message,

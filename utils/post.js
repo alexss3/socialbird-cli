@@ -1,4 +1,4 @@
-module.exports.returnTimeSince = (timestamp) => {
+const returnTimeSince = (timestamp) => {
     // this is very rough and naive, but gets the job
     // done for now.
 
@@ -29,9 +29,11 @@ module.exports.returnTimeSince = (timestamp) => {
 
     }
 }
- 
-module.exports.returnFormattedPost = function (post) {
+
+module.exports.returnTimeSince = returnTimeSince;
+
+module.exports.returnFormattedPost = (post) => {
     // severely lacking input validation
-    const timeSince = this.returnTimeSince(post.date);
+    const timeSince = returnTimeSince(post.date);
     return `${post.username} - ${post.message} (${timeSince})`;
 }
