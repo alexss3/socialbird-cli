@@ -5,6 +5,8 @@ module.exports = () => {
     Usage: <username> [command] <option>
 
     Help: help
+
+    Exit: exit
     
     Posting: <username> -> text
 

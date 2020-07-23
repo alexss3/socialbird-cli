@@ -4,7 +4,7 @@
   "description": "A simple social networking CLI similar to Twitter",
   "main": "index.js",
   "bin": {
-    "social": "bin/socialbird"
+    "socialbird": "bin/socialbird"
   },
   "scripts": {
     "test": "jest --watchAll"
@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^26.1.0",
-    "supertest": "^4.0.2"
+    "jest": "^26.1.0"
   }
 }
